@@ -16,17 +16,17 @@
                 <a href="#logo">DavDev</a>
             </div>
 
-            <nav id="nav" class="nav">
+            <nav id="nav">
                 <ul>
-                    <li> <a href="#inicio">INICIO</a> </li>
-                    <li> <a href="#sobremi">SOBRE MI</a> </li>
-                    <li> <a href="#skills">SKILLS</a> </li>
-                    <li> <a href="#curriculum">CURRICULUM</a> </li>
-                    <li> <a href="#portafolio">PORTAFOLIO</a> </li>
-                    <li> <a href="#contacto">CONTACTO</a> </li>                    
+                    <li> <a href="#inicio" onclick="seleccionar()">INICIO</a> </li>
+                    <li> <a href="#sobremi" onclick="seleccionar()">SOBRE MI</a> </li>
+                    <li> <a href="#skills" onclick="seleccionar()">SKILLS</a> </li>
+                    <li> <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a> </li>
+                    <li> <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a> </li>
+                    <li> <a href="#contacto" onclick="seleccionar()">CONTACTO</a> </li>                    
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
         </header>
@@ -258,7 +258,185 @@
      </section>
 
      <!-- SECCION CURRICULUM-->
-      
+      <section id="curriculum" class="curriculum">
+        <div class="contendor-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3> Educacion</h3>
+                    <div class="item-izq">
+                        <h4>Licenciatura en Geoinformatica</h4>
+                        <span class="casa">Universidad Autónoma del Estado de México</span>
+                        <span class="fecha">2007-2012</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item-izq">
+                        <h4>Curso</h4>
+                        <span class="casa">Universidad Autónoma del Estado de México</span>
+                        <span class="fecha">2007-2012</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
 
+                    <div class="item-izq">
+                        <h4>Diplomados</h4>
+                        <span class="casa">Universidad Autónoma del Estado de México</span>
+                        <span class="fecha">2007-2012</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col derecha">
+                    <h3> Experiencia Laboral</h3>
+                    <div class="item-der">
+                        <h4>Administrador de BBDD</h4>
+                        <span class="casa">Secretaria de Seguridad</span>
+                        <span class="fecha">2018- Actualidad</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item-der">
+                        <h4>Administrador de BBDD</h4>
+                        <span class="casa">Secretaria de Seguridad</span>
+                        <span class="fecha">2018- Actualidad</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item-der">
+                        <h4>Administrador de BBDD</h4>
+                        <span class="casa">Secretaria de Seguridad</span>
+                        <span class="fecha">2018- Actualidad</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam magni quaerat veritatis aperiam. Minus animi cupiditate impedit nobis quae, veniam consectetur numquam fugiat quaerat deserunt ut incidunt ea distinctio provident.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+              
+                </div> 
+            </div>
+        </div>
+      </section>   
+
+      <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/abstract-5719221_1280.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/design-1004044_1920.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/abstract-6047465_1920.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/circuit-7447920_1280.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/earth-3537401_1280.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ink-303240_1920.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/scrpit.js"></script>
 </body>
 </html>
