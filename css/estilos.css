@@ -531,8 +531,8 @@ body{
 /* --------------------------------SECCION CURRICULUM -------------------------------- */
 .curriculum{
     color: #fff;
-    padding: 60px 5px;
-    height: 100vh;
+    padding: 40px 5px;
+    height: 105vh;
     display:flex;
     align-items: center;
 
@@ -555,58 +555,58 @@ body{
     justify-content: space-between;
 }
 .curriculum .fila .col{
-    width: 48%;
-    padding: 0 20px;
+    width: 48.4%;
+    padding: 0 28px;
 }
 .curriculum .fila .col h3{
-    font-size: 26px;
+    font-size: 24px;
     font-family:'Courier New', Courier, monospace;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 .curriculum .fila .izquierda{
-    border-right: 4px solid rgba(230,214,45,.75);
+    border-right: 4px solid rgba(230,214,45,.95);
     overflow: auto;
 }
 .curriculum .fila .derecha{
-    border-left: 4px solid rgba(230,214,45,.75);
+    border-left: 4px solid rgba(230,214,45,.95);
     overflow: auto;
 }
 .curriculum .fila .item{
-    padding: 25px;
-    margin-bottom: 30px;
-    background-color: rgba(74, 122, 124, 0.65);;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(74, 122, 124, 0.65);
     position: relative;
 }
 .curriculum .fila .item h4{
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .curriculum .fila .item .casa{
     color: rgba(230,214,45,.85);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
     color: rgba(230,214,45,.75);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .curriculum .fila .item p{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 4px solid rgba(230,214,45,.75);
+    border-right: 4px solid rgba(230,214,45,.85);
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 4px solid rgba(230,214,45, .75);
+    border-left: 4px solid rgba(230,214,45, .85);
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
-    height: 2px;
+    height: 4px;
     background-color: rgba(230,214,45,.75);
-    width: 47px;
+    width: 40px;
     position: absolute;
     top: 50%;
     right: -47px;
@@ -614,16 +614,16 @@ body{
 }
 .curriculum .fila .item .conectori .circuloi{
     display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgba(230,214,45,.75);
+    height: 15px;
+    width: 15px;
+    border-radius: 80%;
+    background-color: rgba(230,214,45,.95);
     float: right;
     position: relative;
-    bottom: 4px;
+    bottom: 6px;
 }
 .curriculum .fila .item .conectord{
-    height: 2px;
+    height: 4px;
     background-color: rgba(230,214,45,.75);
     width: 47px;
     position: absolute;
@@ -633,30 +633,32 @@ body{
 }
 .curriculum .fila .item .conectord .circulod{
     display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgba(230,214,45,.75);
+    height: 15px;
+    width: 15px;
+    border-radius: 80%;
+    background-color: rgba(230,214,45,.95);
     float: left;
     position: relative;
-    bottom: 4px;
+    bottom: 6px;
 }
 
 /* SECCION portafolio */
 .portafolio{
-    background-color: #252A2E;
     color: #fff;
-    padding: 50px 20px;
+    padding: 40px 5px;
+    height: 100vh;
+    display:flex;
+    align-items: center;
 }
 .portafolio .contenido-seccion{
-    max-width: 1100px;
+    max-width: 1050px;
     margin: auto;
 }
 .portafolio h2{
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Righteous';
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .portafolio .galeria{
     display: flex;
@@ -665,7 +667,7 @@ body{
 }
 .portafolio .galeria .proyecto{
     position: relative;
-    max-width: 340px;
+    max-width: 260px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
@@ -680,12 +682,12 @@ body{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(230,214,45,.65), rgba(230,214,45,.55));
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 1s;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 3px;
     opacity: 0;
     -webkit-transition: 1s;
@@ -708,21 +710,21 @@ body{
     margin-bottom: 0px;
 }
 /* SECCION CONTACTO */
-.contacto{
-    
-    background-color: rgba(30,35,38,.65);
+.contacto{    
     color: #fff;
-    padding: 50px 0;
+    padding: 80px 5px;
+    height: 105vh;
+    align-items: center;
 }
 .contacto .contenido-seccion{
-    max-width: 1100px;
+    max-width: 1050px;
     margin: auto;
 }
 .contacto h2{
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Righteous';
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .contacto .fila{
     display: flex;
@@ -735,12 +737,17 @@ body{
 .contacto .col input, .contacto .col textarea{
     display: block;
     width: 100%;
-    padding: 18px;
+    padding: 14px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252A2E;
+    background-color: rgba(74, 122, 124, 0.75);
     color: #fff;
     font-size: 18px;
+}
+
+.contacto .col input:focus-visible, .contacto .col textarea:focus-visible{
+    outline: none;
+    border: 3px solid rgba(230,214,45, .9) !important;
 }
 .contacto button{
     cursor: pointer;
@@ -749,7 +756,7 @@ body{
     width: fit-content;
     display: block;
     margin: 20px auto;
-    padding: 10px 22px;
+    padding: 12px 25px;
     font-size: 16px;
     color: #fff;
     position: relative;
@@ -761,7 +768,7 @@ body{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: rgba(230,214,45, .85);
     z-index: -1;
     transition: 1s;
     -webkit-transition: 1s;
@@ -771,17 +778,18 @@ body{
 }
 .contacto button:hover .overlay{
     width: 100%;
+    font-weight: bold;
 }
 .contacto .col img{
-    width: 100%;
+    width: 90%;
 }
 .contacto .col .info{
     position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-swidth: 350px;
-    left: 50%;
+    top: 20%;
+    background-color: rgba(74, 122, 124, 0.7);
+    padding: 25px;
+    max-width: 400px;
+    left: 40%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -795,14 +803,14 @@ body{
     margin-bottom: 20px;
 }
 .contacto .col .info ul li i{
-    color: #1CB698;
+    color: rgba(230,214,45, .95);
     display: inline-block;
     margin-right: 20px;
 }
 footer{
-    background-color: #252A2E;
+    background-color: rgba(41, 41, 41, 0.85);
     color: #fff;
-    padding: 50px 0 30px 0;
+    padding: 30px 0 20px 0;
     text-align: center;
     position: relative;
     width: 100%;
@@ -831,7 +839,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: rgba(230,214,45, .95);
     color: #fff;
     position: absolute;
     left: 50%;
