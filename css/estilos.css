@@ -5,7 +5,6 @@
  font-family: "Roboto", "Helvetica Neue";
  margin: 0;
  padding: 0;
-
 }
 
 html {
@@ -35,15 +34,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 10px;
+    padding: 1.5em;
 }
 
 .contenedor-encabezado header .logo a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.3em;
+    font-size: 2.4em;
     color: rgba(230,214,45,.8);
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 1.6em;
 }
 
 .contenedor-encabezado header ul{
@@ -52,90 +51,75 @@ body{
 }
 
 .contenedor-encabezado header .logo a:hover{
-    font-size: 2.45em;
+    font-size: 2.5em;
     color: rgba(230,214,45,.95);
     font-weight: bold;
 }
 
 .contenedor-encabezado header nav ul li a{
     text-align: none;
-    font-size: .92em;
+    font-size: .95em;
     color: #fff;
-    margin: 0 10px;
-    padding: 15px;
+    margin: 0 .6em;
+    padding: .9em;
     transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
     text-decoration: none;
     letter-spacing: 1px;
 }
 
 .contenedor-encabezado header nav ul li a:hover{
     color: rgba(230,214,45,.95);
-    font-size: 1.12em;
+    font-size: 1.11em;
     text-decoration: dashed;
     font-weight: bold;
     border: 3px solid  rgba(230,214,45,.95);
+    border-radius: 20%;
 }
 
 .nav-responsive{
     background-color: rgba(230,214,45,.85);
     color: #fff;
-    padding: 10px 10px;
-    border-radius: 20px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    padding: 1.2em;
+    border-radius: 25%;
     cursor: pointer;
     display: none;
 }
 
 .nav-responsive:hover{
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
-
-
 /*  SECCION INCIO */
 .inicio{
     height: 100vh;
     color: #fff;
     display:flex;
     align-items: center;
+    padding: 1.1em;
 }
 
 .inicio .contenido-banner{
-    padding: 30px;
+    padding: 1.9em;
     background-color: rgba(74, 122, 124, 0.75);
-    max-width: 450px;
+    max-width: 60%;
     margin: auto ;
     text-align: center;
-    border-radius: 60px;
-    -webkit-border-radius:60px;
-    -moz-border-radius:60px;
-    -ms-border-radius:60px;
-    -o-border-radius:60px;
+    border-radius: 15%;
 }
 
 .inicio .contenido-banner img{
-    margin-top: 40px;
+    margin-top: 1.5em;
     border: 4px solid #fff;
     display: block;
     width: 75%;
     margin: auto;
     border-radius:  100%;
-    -webkit-border-radius:100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius:100%;
-    -o-border-radius:100%;
 }
 
 .inicio .contenido-banner h1{
-    margin: 30px 1px;
-    font-size: 2.15em;
+    margin: .5em .2em;
+    font-size: 2.1em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  rgba(230,214,45, .9);
 }
 
 .inicio .contenido-banner h2{
@@ -145,31 +129,24 @@ body{
 
 .inicio .contenido-banner .redes a{
     color: #fff;
-    display: inline-block;
+    display:inline-flex;
     text-decoration: none;
     border: 2px solid #fff;
     border-radius: 100%;
-    width: 1.85em;
-    height: 1.85em;
-    line-height: 40px;
-    margin: 20px 5px;
+    width: 2.2em;
+    height: 2.2em;
+    margin: 1.5em .7em;
     font-size: 1.2em;
     transition: .4s;
-    -webkit-border-radius:100%;
-    -moz-border-radius:100%;
-    -ms-border-radius:100%;
-    -o-border-radius:100%;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
 }
-
+.inicio .contenido-banner .redes a i{
+    margin: .55em auto;
+}
 .inicio .contenido-banner .redes a:hover{
     background-color: rgba(230,214,45,.8);
-    font-size: 1.4em;
-    width: 2.0em;
-    height: 2.0em;
+    font-size: 1.25em;
+    width: 2.25em;
+    height: 2.25em;
 }
 
 .sobremi{
@@ -830,10 +807,10 @@ footer .redes a{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition:3s;
+    -moz-transition:3s;
+    -ms-transition:3s;
+    -o-transition:3s;
 }
 footer .arriba{
     display: block;
@@ -875,6 +852,9 @@ footer .arriba{
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+    }
+    .inicio .contenido-banner{
+        max-width: 250px;
     }
 }
 @media screen and (max-width:700px){
