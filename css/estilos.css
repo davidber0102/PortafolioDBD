@@ -89,19 +89,20 @@ body{
     font-size: 1.1em;
 }
 /*  SECCION INCIO */
-.inicio{
+.inicio, .sobremi, .skills{
     height: 100vh;
     color: #fff;
     display:flex;
     align-items: center;
-    padding: 1.1em;
+    padding: 1.2em;
 }
+
 
 .inicio .contenido-banner{
     padding: 1.9em;
     background-color: rgba(74, 122, 124, 0.75);
-    max-width: 60%;
-    margin: auto ;
+    max-width: 65%;
+    margin: auto;
     text-align: center;
     border-radius: 15%;
 }
@@ -116,7 +117,7 @@ body{
 }
 
 .inicio .contenido-banner h1{
-    margin: .5em .2em;
+    margin: .4em .2em;
     font-size: 2.1em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:  rgba(230,214,45, .9);
@@ -148,40 +149,30 @@ body{
     width: 2.25em;
     height: 2.25em;
 }
-
-.sobremi{
-    color: #fff;
-    padding: 65px 20px;
-    height: 100vh;
-    display:flex;
-    align-items: center;
-
-}
-
+/* Estilos sobre mi */ 
 .sobremi .contenedor-seccion{
     max-width: 1050px;
     margin: auto;
 }
 
-.sobremi h2{
-    font-size: 40px;
+.sobremi h2, .skills h2, .curriculum h2, .portafolio h2, .contacto h2{
+    font-size: 1.95em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    padding: 25px 0;
+    padding: 1em 0;
     letter-spacing: 3px;
 }
 
 .sobremi .contenedor-seccion p{
-    font: 18px;
-    line-height: 30px;
-    margin-bottom: 25px;
+    font: 1.5em;
+    line-height: 165%;
+    margin-bottom: 1.6em;
     letter-spacing: 1px;
 }
 
 .sobremi .contenedor-seccion p span{
     color: rgba(230,214,45,.98);;
     font-weight: bold;
-
 }
 
 .sobremi .fila{
@@ -193,29 +184,29 @@ body{
 }
 
 .sobremi .fila .col h3{
-    font-size: 28px;
+    font-size: 1.75em;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
+    margin: 1em .5em;
 }
 
 .sobremi .fila .col ul{
     list-style: none;
 }
 .sobremi .fila .col ul li{
-    margin: 15px 0;
+    margin: 1.3em 0;
     list-style: none;
 }
 
 .sobremi .fila .col ul li strong{
     display: inline-block;
     color: rgba(230,214,45,.8);
-    width: 130px;
+    width: 5.3em;
 }
 .sobremi .fila .col ul li span{
     background-color: rgba(230,214,45,.85);
-    padding: 5px;
+    padding: .7em;
     font-weight: bold;
-    border-radius:  10px;
+    border-radius: 1.4em;
 }
 
 .sobremi .fila .col .contendero-intereses{
@@ -224,25 +215,27 @@ body{
 }
 
 .sobremi .fila .col .contendero-intereses .intereses{
-    width: 120px;
-    height: 120px;
+    width: 25%;
+    height: 25%;
     background-color: rgba(74, 122, 124, 0.7);
-    border-radius: 20px;
-    margin: 0 20px 10px 0;
+    border-radius: 1.3em;
+    margin: 0 2em 1.6em 0;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     transition: .2s;
-    padding: 20px;
+    padding: 1.4em;
     
 }
 .sobremi .fila .col .contendero-intereses .intereses i{
-    font-size: 28px;
-    margin: 0 auto;
+    font-size: 1.6em;
+    margin: .3em auto;
 }
-.sobremi .fila .col .contendero-intereses .intereses i span {
-   margin-left: 20px;
+.sobremi .fila .col .contendero-intereses .intereses i span{
+    margin: .2em auto;
+    align-content: center;
+    padding: auto 2em;
 }
 .sobremi .fila .col .contendero-intereses .intereses:hover{
     background-color: rgba(230,214,45,.65);
@@ -254,19 +247,20 @@ body{
     border: 3px solid #fff;
     width: fit-content;
     display: block;
-    margin: 30px auto;
-    padding: 25px 35px;
-    font-size: 16px;
+    margin: 2.5em auto;
+    padding: 1.2em 1.5em;
+    font-size: 1.2em;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
-
 .sobremi button .overlay{   
-    width :0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
     height: 100%;
     background-color:rgba(230,214,45,.75);
-    z-index:     1;
     transition: 1s;
 }
 
@@ -275,24 +269,9 @@ body{
 }
 
 /*  SECCION HABILIDADES */
-.skills{
-    color: #fff;
-    padding: 80px 10px;
-    height: 100vh;
-    display:flex;
-    align-items: center;
-}
-
 .skills .contenedor-seccion{
     max-width: 1050px;
     margin: auto;
-}
-
-.skills h2{
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding: 35px 0;
 }
 
 .skills .fila {
@@ -301,13 +280,13 @@ body{
 
 .skills .fila .col{
     width: 50%;
-    padding: 0 30px;
+    padding: 0 1.1em;
 }
 
 .skills .fila .col h3{
-    font-size: 26px;
+    font-size: 1.1em;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 .skills .skill > span{
@@ -519,14 +498,7 @@ body{
     max-width: 1050px;
     margin: auto;
 }
-.curriculum h2{
-    font-size: 40px;
-    font-family:'Courier New', Courier, monospace;
-    text-align: center;
-    padding: 10px 0;
-    letter-spacing: 2px;
 
-}
 .curriculum .fila{
     display: flex;
     justify-content: space-between;
@@ -631,12 +603,7 @@ body{
     max-width: 1050px;
     margin: auto;
 }
-.portafolio h2{
-    font-size: 40px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 15px 0;
-}
+
 .portafolio .galeria{
     display: flex;
     flex-wrap: wrap;
@@ -697,12 +664,7 @@ body{
     max-width: 1050px;
     margin: auto;
 }
-.contacto h2{
-    font-size: 40px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 15px 0;
-}
+
 .contacto .fila{
     display: flex;
 }
