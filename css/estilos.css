@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
- box-sizing: border-box;
- font-family: "Roboto", "Helvetica Neue";
- margin: 0;
- padding: 0;
+ font-family: "Roboto", "Helvetica Neue"; 
 }
 
-html {
-    /*  permite deslizar cuando haga click en los links del menu */
-    scroll-behavior: smooth;
+html {   
+    scroll-behavior: smooth;  /*  permite deslizar cuando haga click en los links del menu */
+height:100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
 }
 /*  imagen de fondo*/
 body{
@@ -17,63 +17,57 @@ body{
     background-repeat: repeat; 
     background-size: cover;
     background-attachment: fixed;
+    padding: 0 1em; /* Más espacio en dispositivos pequeños */
 }
 /*  menu */
-.contenedor-encabezado{
-    background:rgba(41, 41, 41, 0.95) ;
-    position: fixed;
+header{
     width: 100%;
+    padding: 1.5em 5em; 
     top: 0;
     left: 0;
     z-index: 999;
-}
-.contenedor-encabezado header{
-    max-width: 1100px;
+    background:rgba(41, 41, 41, 0.95) ;
+    position: fixed;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .2em;
 }
-.contenedor-encabezado header .logo a{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.3em;
-    color: rgba(230,214,45,.8);
-    text-decoration: none;
-    margin-right: 1.3em;
-}
-.contenedor-encabezado header ul{
+header nav ul{
     display: flex;
     list-style: none;
 }
-.contenedor-encabezado header .logo a:hover{
-    font-size: 2.4em;
-    color: rgba(230,214,45,.95);
-    font-weight: bold;
+.contenedor-encabezado .logo a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    color: rgba(230,214,45,.8);
+    text-decoration: none;
+    margin: 0 3em;
+    transition: color .3s, font-size .3s;
 }
-.contenedor-encabezado header nav ul li a{
-    text-align: none;
-    font-size: .9em;
+
+.contenedor-encabezado .logo a:hover{
+    font-size: 3em;
+    font-weight: bold;
+    box-shadow: -5px 0px 20px 20px #d2d0d0;
+}
+.contenedor-encabezado nav ul li a{
+    font-size: 1em;
     color: #fff;
-    margin: 0 .4em;
-    padding: .6em;
-    transition: .5s;
+    margin: 0 1em;
+    padding: 1em;
     text-decoration: none;
     letter-spacing: 1px;
-
+    transition: 0.4s;
 }
 
-.contenedor-encabezado header nav ul li a:hover{
+.contenedor-encabezado nav ul li a:hover{
     color: rgba(230,214,45,.95);
     font-size: 1em;
     text-decoration: dashed;
     font-weight: bold;
     border: 3px solid  rgba(230,214,45,.95);
     border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
 }
 
 .nav-responsive{
@@ -84,9 +78,17 @@ body{
     cursor: pointer;
     display: none;
 }
-
 .nav-responsive:hover{
     font-size: 1.1em;
+}
+main{
+    z-index: 2;
+    padding: 2em 0;
+    content: "";
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    clear: both;
 }
 /*  SECCION INCIO */
 .inicio, .sobremi, .skills, .curriculum, .portafolio, .contacto{
@@ -94,41 +96,34 @@ body{
     color: #fff;
     display:flex;
     align-items: center;
-    padding: .8em;
-    margin-top: .95em;
+    padding: 1em;
+    margin: 0 4em;
 }
-
 .inicio .contenido-banner{
-    padding: 1.2em .5em;
     background-color: rgba(74, 122, 124, 0.75);
-    max-width: 25%;
-    margin: .5em auto;
+    max-width: 60%;
+    padding: 3em;
+    margin: 3.5em auto;
     text-align: center;
-    border-radius: 15%;
+    border-radius: 20%;
   }
-
 .inicio .contenido-banner img{
-    margin-top: 1.3em;
     border: 4px solid #fff;
     display: block;
-    width: 55%;
-    margin: auto;
+    width: 70%;
+    margin: auto; 
     border-radius:  150%;
-    -webkit-border-radius:  150%;
-    -moz-border-radius:  150%;
-    -ms-border-radius:  150%;
-    -o-border-radius:  150%;
 }
 
 .inicio .contenido-banner h1{
-    margin: .4em .2em;
-    font-size: 2.1em;
+    font-size: 1.6em;
+    padding: .5em;
+    margin: .5em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:  rgba(230,214,45, .9);
 }
 
 .inicio .contenido-banner h2{
-    font-size: 1.2em;
     font-weight: normal;
 }
 
@@ -143,10 +138,6 @@ body{
     margin: 1.5em .7em;
     font-size: 1.2em;
     transition: .4s;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
 }
 .inicio .contenido-banner .redes a i{
     margin: .55em auto;
@@ -159,15 +150,14 @@ body{
 }
 /* Estilos sobre mi */ 
 .sobremi .contenedor-seccion{
-    max-width: 1100px;
-    margin: auto;
+    max-width: 68%;    
+    margin: 1em auto;
 }
-
 .sobremi h2, .skills h2, .curriculum h2, .portafolio h2, .contacto h2{
     font-size: 1.95em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    padding: 1.5em 0 .3em 0;
+    padding: 1em ;
     letter-spacing: 3px;
 }
 
@@ -233,7 +223,6 @@ body{
     border-radius: 1.4em;
     margin: 0 2em 1.6em 0;
     display: flex;
-    flex-direction: column;
     align-content: center;
     justify-content: center;
     transition: .2s;
@@ -242,10 +231,6 @@ body{
     -moz-border-radius: 1.4em;
     -ms-border-radius: 1.4em;
     -o-border-radius: 1.4em;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
 }
 .sobremi .fila .col .contendero-intereses .intereses i{
     font-size: 1.6em;
@@ -632,13 +617,13 @@ body{
     margin: auto;
 }
 .portafolio .galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, fr));
+    gap: .5em;
 }
 .portafolio .galeria .proyecto{
     position: relative;
-    max-width: 22%;
+    max-width: 100%;
     height: fit-content;
     margin: 1em;
     cursor: pointer;
@@ -655,7 +640,6 @@ body{
     text-align: center;
     background: linear-gradient(rgba(230,214,45,.65), rgba(230,214,45,.55));
     display: flex;
-    flex-direction: column;
     justify-content: center;
     transition: 1s;
     font-size: 1em;
@@ -794,10 +778,6 @@ footer .redes a{
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
 }
 footer .arriba{
     display: block;
@@ -849,48 +829,56 @@ footer .arriba{
     }
 
 }
-@media screen and (max-width:700px){
-    .sobremi .fila{
-        display: block;
-    }
-    .sobremi .fila .col{
-        width: fit-content;
-    }
+@media screen and (max-width: 768px){
+    .contenedor-encabezado header {
+        padding: 1em;
+      }
+      .contenedor-encabezado header ul {
 
-    .skills .fila{
-        display: block;
-    }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
+        align-items: center;
+      }
 
-    .curriculum .fila{
-        display: block;
-    }
-    .curriculum .fila .col{
-        width: 90%;
-    }
-    .curriculum .fila .derecha{
-        margin-left: 20px;
-    }
+      .inicio .contenido-banner {
+        max-width: 90%;
+        padding: 1em;
+      }
 
-    .portafolio .galeria{
+ 
+      .sobremi .fila .col, .skills .fila .col {
+        width: 100%;
+        padding: 0;
+      }
+    
+      .portafolio .galeria .proyecto {
+        max-width: 48%;
+        margin: 0.5em;
+      }
+      contenedor-encabezado header ul {
+        display: none;
+      }
+    
+      .nav-responsive {
         display: block;
-        width: 100%;
+      }
+    
+      /* Mostrar menú al hacer clic */
+      .nav-responsive.active + header ul {
+        display: flex;
+        align-items: center;
+      }
     }
-    .portafolio .galeria .proyecto{
-        max-width: 100%;
+  /* Ajustes para tablets y pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor-encabezado header {
+      padding: .5em;
     }
-    .portafolio .galeria .proyecto img{
-        width: 100%;
+  
+    .inicio .contenido-banner {
+      max-width: 70%;
     }
-    .contacto .fila{
-        display: block;
+  
+    .portafolio .galeria .proyecto {
+      max-width: 30%;
     }
-    .contacto .fila .col{
-        width: 100%;
-    }
+  }
 }
